@@ -2,7 +2,7 @@
 
     
 
-    function izracunajDostavu($rastojanje, $grad){
+    function izracunajDostavu($cijena, $grad){
 
         $cijenaDostave = 0;
         $dostava = [
@@ -39,6 +39,12 @@
     echo $sarajevo;
     $cuprija = izracunajDostavu(3000,"Cuprija");
     echo $cuprija;
-    var_dump($cuprija);
+
+
+    //Pokusao sam sam, na pocetku sam odmah zapeo sa array_key_exists, a ovo kasnije logiku mogu da rijesim.
+    //Zbunio me prvi unos u funkciju - $cijena - jer se uopste ne iskoristi kao unos, sto znaci da sam mogao
+    //da napravim samo function izracunajDostavu($grad){}, i to bi radilom, ali ajde pretvaramo se da je i
+    //cijena potrebna za unos :)
+    //Bijeljinu sam dodao samo da testiram rastojanje izmedju 100 i 200 :)
 
 ?>
